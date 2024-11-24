@@ -42,7 +42,7 @@ Este repositorio contiene el código necesario para calcular los ratios financie
 ## Requisitos
 
 ### Para la versión de escritorio (Python)
-Asegúrate de tener instalado **Python 3.x** y las siguientes bibliotecas:
+Asegúrate de tener instalado **Python 3.8.7 en adelante** y las siguientes bibliotecas:
 
 - **pandas**: Para manejar los datos.
 - **openpyxl**: Para leer los archivos Excel.
