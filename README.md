@@ -1,51 +1,53 @@
-# **Análisis de Ratios Financieros - Proyecto Completo**
+# Análisis de Ratios Financieros - Proyecto Educativo
 
-**Desarrollado por:** Fabian Sagua, Fundador de **DATA COUNT AI**
+¡Hola! Soy **Fabian Sagua**, fundador de **DATA COUNT AI**. Este proyecto tiene un propósito **educacional** y está diseñado para ayudarte a comprender cómo se calculan y analizan los **ratios financieros** de una empresa utilizando datos reales del cierre del periodo 2023.
 
-Este proyecto está diseñado para automatizar el cálculo de **ratios financieros** utilizando datos almacenados en archivos Excel. Los cálculos se realizan a través de dos versiones: una para **entornos de escritorio** y otra basada en **Google Colab**, permitiendo la ejecución en un entorno web interactivo. El propósito es proporcionar una herramienta útil para analizar la situación financiera de una empresa mediante los **ratios financieros** más relevantes, tales como:
+## Propósito del Proyecto
+
+Este proyecto busca enseñar, de forma práctica, cómo evaluar la salud financiera de una organización utilizando **ratios financieros** clave. El análisis está basado en un conjunto de datos extraídos de la **Superintendencia del Mercado de Valores (SMV)**, específicamente de una empresa al cierre del **31 de diciembre de 2023**.
+
+El objetivo es que, a través de este repositorio, puedas aprender a calcular y entender ratios como:
 
 - **Liquidez Corriente**
 - **Liquidez Ácida**
 - **Endeudamiento**
 - **Rentabilidad sobre el Patrimonio (ROE)**
 
-## **Descripción del Proyecto**
+He preparado dos versiones de este proyecto para que puedas elegir la que mejor se adapte a tus necesidades:
 
-Este repositorio incluye dos versiones del mismo análisis de ratios financieros:
+- **Versión de escritorio (Python)**: Una versión más "clásica" que puedes ejecutar localmente en tu máquina.
+- **Versión interactiva (Google Colab)**: Si prefieres trabajar directamente desde tu navegador, esta opción te permitirá interactuar con los datos de manera sencilla.
 
-1. **Versión de Escritorio**: Implementada en Python utilizando bibliotecas como **pandas** y **openpyxl** para leer y procesar los datos de un archivo Excel local. Los cálculos y resultados se visualizan en la consola.
-2. **Versión de Google Colab**: Una versión interactiva donde puedes cargar el archivo Excel desde Google Drive, realizar los cálculos de los ratios financieros y visualizar los resultados directamente en el entorno web de Google Colab.
+## Fuente de los Datos
 
-Ambas versiones permiten a los usuarios calcular de manera eficiente y sencilla los principales ratios financieros, mejorando el análisis y la toma de decisiones.
+Los datos utilizados en este proyecto provienen directamente de la **Superintendencia del Mercado de Valores (SMV)** y corresponden a una empresa al cierre del **31 de diciembre de 2023**. El archivo Excel con la información financiera se encuentra disponible en el repositorio bajo el nombre `ef1.xlsx`.
 
-## **Objetivos Principales**
+## Descripción del Proyecto
 
-- **Automatizar el Cálculo de Ratios Financieros**: Calculando la **Liquidez Corriente**, **Liquidez Ácida**, **Endeudamiento** y **Rentabilidad sobre el Patrimonio (ROE)** utilizando los datos de un archivo Excel.
-- **Interactividad**: Ofrecer dos formas de ejecución, una en **Google Colab** para aquellos que prefieren trabajar en la web y otra en **escritorio** para usuarios locales con Python.
-- **Facilidad de Uso**: Diseñado para que los usuarios puedan copiar, pegar y ejecutar el código fácilmente, garantizando que comprendan el proceso detrás de los cálculos.
+Este repositorio contiene el código necesario para calcular los ratios financieros más comunes a partir de los datos del estado de situación financiera de la empresa. Los ratios que calculamos son:
 
-## **Características y Funcionalidades**
+- **Liquidez Corriente**: Activos Corrientes / Pasivos Corrientes
+- **Liquidez Ácida**: (Activos Corrientes - Inventarios) / Pasivos Corrientes
+- **Endeudamiento**: Total Pasivos / Total Patrimonio
+- **Rentabilidad sobre el Patrimonio (ROE)**: Resultados Acumulados / Capital Emitido
 
-- **Conexión y Lectura de Datos**: Ambos métodos permiten la carga de datos financieros desde archivos Excel, utilizando bibliotecas como **pandas** y **openpyxl**.
-- **Cálculos de Ratios Financieros**: Implementación de los siguientes ratios:
-  - **Liquidez Corriente**: Activos Corrientes / Pasivos Corrientes
-  - **Liquidez Ácida**: (Activos Corrientes - Inventarios) / Pasivos Corrientes
-  - **Endeudamiento**: Total Pasivos / Total Patrimonio
-  - **Rentabilidad sobre el Patrimonio (ROE)**: Resultados Acumulados / Capital Emitido
-- **Validación de Datos**: Limpieza y conversión de datos para asegurar que se utilicen valores numéricos válidos para los cálculos.
-- **Visualización de Resultados**: Los resultados se muestran de manera clara en la consola para la versión de escritorio y en celdas interactivas en Google Colab.
+### Características del Proyecto
 
-## **Requisitos**
+- **Lectura y procesamiento de datos**: Utilizamos **pandas** para leer los datos del archivo Excel y procesarlos correctamente.
+- **Limpieza de datos**: Implementamos funciones para limpiar y convertir los valores de manera que puedan ser usados para los cálculos.
+- **Cálculos financieros**: Realizamos los cálculos de los ratios utilizando fórmulas estándar.
+- **Interactividad**: En la versión de **Google Colab**, puedes cargar el archivo y ver los resultados en tiempo real.
+- **Resultados claros y directos**: Los resultados de los cálculos se presentan en la consola o en celdas de Google Colab, según la versión que elijas.
 
-### **Versión de Escritorio (Python)**
-Para ejecutar la versión de escritorio, asegúrate de tener instaladas las siguientes librerías:
+## Requisitos
 
-- **Python 3.x**
-- **Librerías necesarias**:
-  - pandas
-  - openpyxl
+### Para la versión de escritorio (Python)
+Asegúrate de tener instalado **Python 3.x** y las siguientes bibliotecas:
 
-Para instalar las librerías, puedes usar el siguiente comando en tu terminal o consola:
+- **pandas**: Para manejar los datos.
+- **openpyxl**: Para leer los archivos Excel.
+
+Puedes instalar las dependencias ejecutando:
 
 ```bash
 pip install pandas openpyxl
